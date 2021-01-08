@@ -183,7 +183,8 @@ main section p{
 .main-live{
     background: url(Living.jpg) center center ;
     background-size: cover;
-    padding-bottom: 18%;
+    padding-bottom: 15%;
+    height: 60vh;
     
     display: flex;
     justify-content: left;
@@ -200,15 +201,17 @@ main section p{
     align-items: flex-end;
     color: #fff;
     text-shadow: -1px -1px 2px #808080; 
+    height: 60vh;
 }
 
 .main-looking{
     background: url(lookin.jpg) center center;
     background-size: cover;
-    padding-bottom: 18%;
+    padding-bottom: 15%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    height: 60vh;
 }
 
 /**/
