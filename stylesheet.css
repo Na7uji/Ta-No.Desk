@@ -38,8 +38,8 @@ img{
     width: 100%;
     position: fixed;
     top: 0;
-    left: 4%;
-    right: 4%;
+    left: 0%;
+    right: 0%;
     z-index: 10;
 }
 
@@ -181,7 +181,7 @@ main section p{
 }
 
 .main-live{
-    background: url(../img/Living.jpg) center center ;
+    background: url(Living.jpg) center center ;
     background-size: cover;
     padding-bottom: 18%;
     
@@ -191,7 +191,7 @@ main section p{
 }
 
 .main-games{
-    background: url(../img/game.jpg) center center;
+    background: url(game.jpg) center center;
     background-size: cover;
     padding:25% 0 5% 5%;
     
@@ -203,7 +203,7 @@ main section p{
 }
 
 .main-looking{
-    background: url(../img/lookin.jpg) center center;
+    background: url(lookin.jpg) center center;
     background-size: cover;
     padding-bottom: 18%;
     display: flex;
