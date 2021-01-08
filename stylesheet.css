@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%; /*ユーザーが設定した文字サイズが反映される。通常16px*/
+}
+
+body{
+    line-height: 1.7;
+    color: #432;
+    font-family: 'Cormorant Garamond', serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    max-width: 100%; /*画像が親要素より大きくなるのを防ぐ*/
+}
+
+/*共通*/
+.wrapper, .wrapper-about{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.wrapper-about{padding: 0;}
+
+/* ヘッダー部分 */
+.page-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.3em 0;
+    background: rgba(255,255,255,0.6);
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 4%;
+    right: 4%;
+    z-index: 10;
+}
+
+.page-header h1{
+   font-family: 'Sofia', cursive;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.4em;
+    list-style: none;
+}
+
+.main-nav li{
+    margin-right: 15px;
+}
+
+.main-nav li a{
+    display: block;
+    padding: 5px 12px 2px 12px;
+    color: #432;
+    position: relative;
+    transition: all 0.2s ease;
+    font-weight: 700;
+}
+
+/* ホバー時の挙動設定 */
+.main-nav li a:hover{
+    color: rgb(6, 172, 201);
+    transform: scale(1.1);
+}
+
+.main-nav li a:before {
+	content: '';
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.2s ease;
+	border-bottom: 2px solid rgb(6, 172, 201);
+	position: absolute;
+	display: block;
+}
+.main-nav li a:hover:before {
+	width: 50%;
+	border-bottom: 2px solid rgb(6, 172, 201);
+}
+.main-nav li a:after {
+	content: '';
+	width: 0;
+	right: 50%;
+	bottom: 0;
+	transition: all 0.2s ease;
+	border-bottom: 2px solid rgb(6, 172, 201);
+	position: absolute;
+	display: block;
+}
+.main-nav li a:hover:after {
+	width: 50%;
+	border-bottom: 2px solid rgb(6, 172, 201);
+}
+
+/*メイン*/
+.page-main{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.page-main h2{
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0.5em 0 0.8em 0;
+    font-family: 'Sofia', cursive;
+}
+
+.contents-wrapper{ /*メイン画像とプロフィールを横並び*/
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 50px;
+}
+
+.main-pic{
+    width: 37%;
+    margin-right: 5%;
+}
+
+.main-pic img{
+    filter: drop-shadow(3px 7px 7px rgb(197, 196, 196)); 
+}
+.main-topic{
+    width: 49%;
+    padding: 10px;
+}
+
+.name{
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-family: 'Sofia', cursive;
+    font-size: 2.5em;
+}
+
+.main-topic p{
+    font-size: 1.4em;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.main-topic a:hover{
+    color: rgb(6, 172, 201);
+    font-weight: 800;
+}
+/* フッター */
+footer{
+    text-align: center;
+    background: #432;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    padding: 0.5em;
+}
+
+/* About ページ */
+
+main section{
+    padding: 5% 5% 0;
+    text-shadow: -1px -1px 9px #fff; 
+}
+
+main section h3{
+    font-family: 'Sofia', cursive;
+    font-size: 3.5em;
+}
+
+main section p{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.main-live{
+    background: url(../img/Living.jpg) center center ;
+    background-size: cover;
+    padding-bottom: 18%;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.main-games{
+    background: url(../img/game.jpg) center center;
+    background-size: cover;
+    padding:25% 0 5% 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+    text-shadow: -1px -1px 2px #808080; 
+}
+
+.main-looking{
+    background: url(../img/lookin.jpg) center center;
+    background-size: cover;
+    padding-bottom: 18%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/**/
+/**/
