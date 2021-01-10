@@ -126,13 +126,13 @@ img{
 .contents-wrapper{ /*メイン画像とプロフィールを横並び*/
     display: flex;
     justify-content: center;
-    margin: 0 auto 50px;
+    margin: 0 auto 150px;
 }
 
 .main-pic{
     width: 37%;
-    margin-left: 10%;
-    text-align: center; /*子要素である main-pic.png を中央配置するため*/
+    margin: 0 8% 0 5%;
+    text-align: right; /*子要素である main-pic.png を中央等に配置*/
 }
 
 .main-pic img{
@@ -140,7 +140,7 @@ img{
 }
 .main-topic{
     width: 49%;
-    padding: 10px;
+    padding: 2% 4% 2% 0;
 }
 
 .name{
