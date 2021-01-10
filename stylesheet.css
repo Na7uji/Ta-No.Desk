@@ -12,6 +12,13 @@ body{
     background-size: cover;
     background-color: rgb(248,248,255);
 }
+
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
 a{
     text-decoration: none;
     color: #000;
@@ -124,7 +131,8 @@ img{
 
 .main-pic{
     width: 37%;
-    margin-right: 5%;
+    margin-left: 10%;
+    text-align: center; /*子要素である main-pic.png を中央配置するため*/
 }
 
 .main-pic img{
@@ -158,6 +166,10 @@ img{
 footer{
     text-align: center;
     background: #432;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 footer p{
@@ -166,7 +178,7 @@ footer p{
     padding: 0.5em;
 }
 
-/* About ページ */
+/* About ページ -----------------------------*/
 
 main section{
     padding: 5% 5% 0;
