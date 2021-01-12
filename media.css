@@ -1,0 +1,23 @@
+@media (max-width: 1025px){ /*iPad 9.7/ iPad mini 横にしたときの画面幅以下*/
+    .main-nav{
+        font-size: 1.1em;
+    }
+    
+    .main-title{
+        font-size: 3.8rem;
+    }
+    
+    .main-topic p{
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-bottom: 0.5em;
+    }
+    
+    /* About */
+    main section h3{
+        font-size: 3em;
+    }
+    main section p{
+        font-size: 1.1em;
+    }
+}
