@@ -59,18 +59,18 @@
     }
     
     .main-live{
-        padding: 15% 0 10% 5%;
-        height: 60vh;
+        padding: 18% 0 10% 5%;
+        height: 65vh;
     }
     .main-games{
         padding: 0 0 10% 4%;
     }
     .main-looking{
-        padding: 8% 7% 15% 0;
+        padding: 10% 7% 15% 3%;
         background-position: right center;
     }
     
     .main-games, .main-looking{
-        height: 50vh;
+        height: 60vh;
     }
 }
