@@ -2,22 +2,75 @@
     .main-nav{
         font-size: 1.1em;
     }
-    
     .main-title{
-        font-size: 3.8rem;
+        font-size: 3.3rem;
     }
-    
     .main-topic p{
         font-size: 1.2em;
         line-height: 1.5;
         margin-bottom: 0.5em;
     }
     
-    /* About */
+    /* About------------------ */
     main section h3{
-        font-size: 3em;
+        font-size: 2.8em;
     }
     main section p{
         font-size: 1.1em;
+    }
+}
+
+@media (max-width: 600px){
+    
+    /*グローバルナビゲーション縦並びにする*/
+    .page-header{
+        flex-direction: column;
+    }
+    
+    .main-nav{
+        font-size: 1.3em;
+    }
+
+    .contents-wrapper{ /*画像とプロフィールを縦並びにする*/
+        flex-direction: column;
+        margin: 0 auto 50px;
+    }
+    
+    .main-title{
+        font-size: 2.7rem;
+        margin-top: 3em;
+    }
+    .main-pic{
+        width: 56%; /*縦並び時の画像の幅を大きくする。*/
+    }
+    
+    .main-topic{
+        width: 85%;
+        line-height: 1.7;
+    }
+    .name {
+        text-align: center;
+    }
+    
+    
+    /*About------------------*/
+    main section h3{
+        font-size: 2.2em;
+    }
+    
+    .main-live{
+        padding: 15% 0 10% 5%;
+        height: 60vh;
+    }
+    .main-games{
+        padding: 0 0 10% 4%;
+    }
+    .main-looking{
+        padding: 8% 7% 15% 0;
+        background-position: right center;
+    }
+    
+    .main-games, .main-looking{
+        height: 50vh;
     }
 }
